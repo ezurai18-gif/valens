@@ -15,8 +15,8 @@ body {
     background: linear-gradient(135deg, #ff69b4, #ffb6c1);  /* Pink gradient */
 }
 
-/* Heart image */
-.heart-image {
+/* snoopy image */
+.snoopy-image {
     width: 200px;
     height: auto;
     margin-bottom: 20px;
@@ -41,7 +41,10 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-top: 30px;  /* New: Adds space below the h1 text */
+    flex-direction: row;  /* Side-by-side; change to 'column' for vertical */
 }
+
 
 .btn {
     padding: 15px 30px;
