@@ -1,0 +1,99 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pink background for first screen */
+.pink-bg {
+    background: linear-gradient(135deg, #ff69b4, #ffb6c1);  /* Pink gradient */
+}
+
+/* Heart image */
+.heart-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;  /* Subtle heartbeat animation */
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Text */
+h1 {
+    color: #d63384;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.yes-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.yes-btn:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.no-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.no-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.1);
+}
+
+.back-btn {
+    background-color: #6c757d;
+    color: white;
+    margin-top: 20px;
+}
+
+.back-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .heart-image {
+        width: 150px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
